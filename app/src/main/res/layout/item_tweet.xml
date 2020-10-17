@@ -25,7 +25,18 @@
         android:layout_marginTop="0dp"
         android:layout_toEndOf="@+id/ivProfileImage"
         android:textStyle="bold"
+        android:textColor="@color/white"
         tools:text="emmarise" />
+
+    <TextView
+        android:id="@+id/tvUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@+id/tvScreenName"
+        android:textColor="@color/grey"
+        tools:text="Username123" />
 
     <TextView
         android:id="@+id/tvBody"
@@ -35,6 +46,10 @@
         android:layout_marginStart="5dp"
         android:layout_marginTop="2dp"
         android:layout_toEndOf="@+id/ivProfileImage"
+        android:textColor="@color/white"
+        android:autoLink="all"
+        android:linksClickable="true"
+        android:textColorLink="@color/blue"
         tools:text="This is my tweet" />
 
     <TextView
@@ -50,6 +65,7 @@
         android:textAlignment="viewEnd"
         android:textAllCaps="false"
         android:textSize="14sp"
+        android:textColor="@color/grey"
         tools:text="9 mins ago" />
 
 </RelativeLayout>
