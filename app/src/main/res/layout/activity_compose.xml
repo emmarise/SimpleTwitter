@@ -32,13 +32,13 @@
         android:text="@string/tweet" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvDisplay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/etCompose"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="5dp"
         android:layout_toStartOf="@+id/btnTweet"
-        android:text="5/280"
+        android:text="0"
         android:textSize="18sp" />
 </RelativeLayout>
