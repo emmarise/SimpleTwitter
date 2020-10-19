@@ -83,8 +83,8 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         int margin = 10; // crop margin, set to 0 for corners with no crop
         public void bind(Tweet tweet) {
             tvBody.setText(tweet.body);
-            tvScreenName.setText(tweet.user.screenName);
-            tvUsername.setText("@" + tweet.user.name);
+            tvScreenName.setText(tweet.user.name);
+            tvUsername.setText("@" + tweet.user.screenName);
             tvTimer.setText(tweet.getFormattedTimeDiff());//timer TextView
             Glide.with(context).load(tweet.user.profileImageUrl).transform(new RoundedCornersTransformation(radius, margin)).into(ivProfileImage);
         }
